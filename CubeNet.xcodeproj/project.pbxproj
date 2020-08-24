@@ -12,6 +12,13 @@
 		6C42B41024EF3F3A00F4A93B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C42B40E24EF3F3A00F4A93B /* MainMenu.xib */; };
 		6C42B41C24EF3F3A00F4A93B /* CubeNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42B41B24EF3F3A00F4A93B /* CubeNetTests.swift */; };
 		6C42B42724EF3F3A00F4A93B /* CubeNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42B42624EF3F3A00F4A93B /* CubeNetUITests.swift */; };
+		6C42B43824EF3F4400F4A93B /* netmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C42B43624EF3F4400F4A93B /* netmath.c */; };
+		6C42B43C24EF3F6000F4A93B /* Neuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42B43924EF3F6000F4A93B /* Neuron.swift */; };
+		6C42B43D24EF3F6000F4A93B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42B43A24EF3F6000F4A93B /* Network.swift */; };
+		6C42B44024EF3F6900F4A93B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42B43F24EF3F6900F4A93B /* Connection.swift */; };
+		6C49A0C424F2223100AEC0A8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 6C49A0C324F2223100AEC0A8 /* assets */; };
+		6C49A0CA24F2318D00AEC0A8 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C49A0C924F2318D00AEC0A8 /* Cube.swift */; };
+		6C58742524EF4AD20071453D /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C58742424EF4AD20071453D /* CubeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,15 @@
 		6C42B42224EF3F3A00F4A93B /* CubeNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C42B42624EF3F3A00F4A93B /* CubeNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeNetUITests.swift; sourceTree = "<group>"; };
 		6C42B42824EF3F3A00F4A93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C42B43424EF3F4300F4A93B /* CubeNet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CubeNet-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C42B43624EF3F4400F4A93B /* netmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netmath.c; sourceTree = "<group>"; };
+		6C42B43724EF3F4400F4A93B /* netmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netmath.h; sourceTree = "<group>"; };
+		6C42B43924EF3F6000F4A93B /* Neuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neuron.swift; sourceTree = "<group>"; };
+		6C42B43A24EF3F6000F4A93B /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		6C42B43F24EF3F6900F4A93B /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		6C49A0C324F2223100AEC0A8 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		6C49A0C924F2318D00AEC0A8 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		6C58742424EF4AD20071453D /* CubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				6C42B40A24EF3F3A00F4A93B /* AppDelegate.swift */,
+				6C58742424EF4AD20071453D /* CubeViewController.swift */,
+				6C49A0C924F2318D00AEC0A8 /* Cube.swift */,
+				6C42B43424EF3F4300F4A93B /* CubeNet-Bridging-Header.h */,
+				6C42B44124EF3F7300F4A93B /* NeuralNet */,
 				6C42B40C24EF3F3A00F4A93B /* Assets.xcassets */,
+				6C49A0C324F2223100AEC0A8 /* assets */,
 				6C42B40E24EF3F3A00F4A93B /* MainMenu.xib */,
 				6C42B41124EF3F3A00F4A93B /* Info.plist */,
 				6C42B41224EF3F3A00F4A93B /* CubeNet.entitlements */,
@@ -119,6 +140,18 @@
 				6C42B42824EF3F3A00F4A93B /* Info.plist */,
 			);
 			path = CubeNetUITests;
+			sourceTree = "<group>";
+		};
+		6C42B44124EF3F7300F4A93B /* NeuralNet */ = {
+			isa = PBXGroup;
+			children = (
+				6C42B43A24EF3F6000F4A93B /* Network.swift */,
+				6C42B43924EF3F6000F4A93B /* Neuron.swift */,
+				6C42B43F24EF3F6900F4A93B /* Connection.swift */,
+				6C42B43624EF3F4400F4A93B /* netmath.c */,
+				6C42B43724EF3F4400F4A93B /* netmath.h */,
+			);
+			path = NeuralNet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +222,7 @@
 				TargetAttributes = {
 					6C42B40624EF3F3A00F4A93B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					6C42B41624EF3F3A00F4A93B = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -227,6 +261,7 @@
 			files = (
 				6C42B40D24EF3F3A00F4A93B /* Assets.xcassets in Resources */,
 				6C42B41024EF3F3A00F4A93B /* MainMenu.xib in Resources */,
+				6C49A0C424F2223100AEC0A8 /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C42B40B24EF3F3A00F4A93B /* AppDelegate.swift in Sources */,
+				6C42B43C24EF3F6000F4A93B /* Neuron.swift in Sources */,
+				6C42B44024EF3F6900F4A93B /* Connection.swift in Sources */,
+				6C42B43D24EF3F6000F4A93B /* Network.swift in Sources */,
+				6C42B43824EF3F4400F4A93B /* netmath.c in Sources */,
+				6C49A0CA24F2318D00AEC0A8 /* Cube.swift in Sources */,
+				6C58742524EF4AD20071453D /* CubeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +458,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CubeNet/CubeNet.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CubeNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -427,6 +470,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mayanyaa.CubeNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CubeNet/CubeNet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -435,9 +481,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CubeNet/CubeNet.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CubeNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,6 +493,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mayanyaa.CubeNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CubeNet/CubeNet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
